@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Exporter</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>ChatGPT Exporter</h1>
+        <p id="status">현재 대화를 추출할 준비가 됐습니다.</p>
+      </header>
+
+      <section class="actions">
+        <button id="copyMarkdown" type="button">Markdown 복사</button>
+        <button id="downloadMarkdown" type="button">Markdown 저장</button>
+        <button id="downloadText" type="button">TXT 저장</button>
+      </section>
+
+      <label class="option">
+        <input id="includeMeta" type="checkbox" checked>
+        제목, 주소, 추출 시각 포함
+      </label>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
